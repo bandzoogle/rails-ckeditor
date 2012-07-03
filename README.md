@@ -1,13 +1,21 @@
-# CKEditor Rails
+CKEditor Rails
+==============
 
 [CKEditor][ckeditor] for Rails.
 
-**Note:** Latest gem version uses [CKEditor 3.6.1][3.6.1].
 
-## Rails 3.1
+Usage
+-----
 
-This gem vendors `CKEditor 3.6.1` for `Rails 3.1` and greater. The files will
-be added to the asset pipeline and available for you to use.
+This gem vendors [CKEditor 3.6.3][revision] for `Rails 3` and greater.
+The files will be added to the asset pipeline and available for you
+to use.
+
+Include `ckeditor-rails` in your `Gemfile`:
+
+    gem 'ckeditor-rails'
+
+Now you can include it on the asset pipeline:
 
     //= require ckeditor
 
@@ -25,19 +33,14 @@ where **CKEditor** should be shown. More info [here][ckeditor_basepath].
     </script>
     <%= javascript_include_tag 'ckeditor/ckeditor' %>
 
-### Installation
 
-In a Rails 3.1 apps include `ckeditor-rails` in the Gemfile:
-
-    gem 'ckeditor-rails'
-
-You're done!
-
-## License
+License
+-------
 
 [CKEditor license][ckeditor_license].
+
 
 [ckeditor_license]: http://ckeditor.com/license
 [ckeditor]: http://ckeditor.com/
 [ckeditor_basepath]: http://docs.cksource.com/CKEditor_3.x/Developers_Guide/Specifying_the_Editor_Path
-[3.6.1]: http://ckeditor.com/blog/CKEditor_3.6.1_released
+[revision]: http://cksource.com/blog/CKEditor_3.6.3_released
