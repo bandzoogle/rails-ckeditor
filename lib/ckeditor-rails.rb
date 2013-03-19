@@ -1,8 +1,11 @@
 require "ckeditor-rails/version"
-require "ckeditor-rails/engine"
 
 module Ckeditor
   module Rails
-    # Your code goes here...
+    if ::Rails.version < '3.1'
+      require 'ckeditor-rails/railtie'
+    else
+      require 'ckeditor-rails/engine'
+    end
   end
 end
